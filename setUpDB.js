@@ -17,3 +17,7 @@ export async function writeLog(request) {
     console.log("Writing database to file");
     await db.write();
 }
+
+export function outputLogs() {
+    return db.data;
+}
